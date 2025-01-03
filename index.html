@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HOMEWORKS</title>
+    <link rel="stylesheet" href="styles/css.css">
+</head>
+<body>
+<div class="logo">
+    <img src="images/homeWorks.png" alt="">
+</div>
+<div class="main">
+    <div class="left-block">
+        <div class="left-title" id="title">
+            Get your free account
+        </div>
+
+        <div class="left-text">
+            Try homeWorks BUSINESS free for 15 days. Downgrade to Basic (Free Forever) anytime.
+        </div>
+
+        <div class="left-form">
+            <label class="left-label" for="fullName">Full Name
+                <input type="text" class="left-input" id="fullName">
+                <span class="fullName-error div-error"></span>
+            </label>
+
+            <label class="left-label" for="username">Your username
+                <input type="text" class="left-input" id="username">
+                <span class="username-error div-error"></span>
+            </label>
+
+            <label class="left-label" for="E-mail">E-mail
+                <input type="email" class="left-input" id="E-mail">
+                <span class="E-mail-error div-error"></span>
+            </label>
+
+            <label class="left-label" for="password">Password
+                <input type="password" class="left-input" id="password">
+                <span class="password-error div-error"></span>
+            </label>
+
+            <label class="left-label" for="repeat-password">Repeat Password
+                <input type="password" class="left-input" id="repeat-password">
+                <span class="repeat-password-error div-error"></span>
+            </label>
+
+            <label id="checkbox-container" for="checkbox" class="left-checkbox">
+                <input type="checkbox" class="checkbox" id="checkbox">Agree to our Terms of Service and Privacy
+                Statement
+                <span class="checkbox-error div-error"></span>
+            </label>
+
+            <button class="button btn" id="button">Sign Up</button>
+
+            <a href="#" class="account" id="login">Already have an account?</a>
+            <a href="#" class="account" id="registration">Registration</a>
+        </div>
+    </div>
+
+    <div class="right-block">
+        <div class="right-image">
+            <img src="images/rightimage.png" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="popup-container" id="popupContainer">
+    <div class="popup">
+        <div class="close">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="svg" id="svg">
+                <g id="_79_Close" data-name="79 Close">
+                    <path d="m21.71 20.29a1 1 0 0 1 0 1.42 1 1 0 0 1 -1.42 0l-8.29-8.3-8.29 8.3a1 1 0 0 1 -1.42 0 1 1 0 0 1 0-1.42l8.3-8.29-8.3-8.29a1 1 0 0 1 1.42-1.42l8.29 8.3 8.29-8.3a1 1 0 1 1 1.42 1.42l-8.3 8.29z"
+                          fill="#000000">
+                    </path>
+                </g>
+            </svg>
+        </div>
+        <div class="popup-text">
+            На вашу почту выслана ссылка, перейдите по ней, чтобы завершить регистрацию
+        </div>
+
+        <button class="button popup-button" id="popupButton">OK</button>
+    </div>
+</div>
+<script src="scripts/jquery-3.7.1.min.js"></script>
+<script src="scripts/script.js"></script>
+</body>
+</html>
