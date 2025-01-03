@@ -167,11 +167,7 @@ $(document).ready(function () {
 
             let clients = localStorage.getItem('clientsArray');
             let clientsArray = JSON.parse(clients);
-            console.log(clientsArray[1].username);
-            console.log(clientsArray[1].password);
-            console.log(username.val());
-            console.log(password.val());
-            const currentUser = clientsArray.find(client => client.username === username.val() && client.password === password.val());
+            const currentUser = clientsArray && clientsArray.length > 0 ? clientsArray.find(client => client.username === username.val() && client.password === password.val()) : null;
 
             if (currentUser) {
                 title.parent().css('align-items', 'center');
